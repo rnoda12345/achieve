@@ -5,9 +5,7 @@
 	<% @poems.each do |poem| %>
     <div class="row">
       <h4><strong><%= poem.title %></strong></h4>
-      <%= poem.id %>
-      <%= poem.created_at %>
-      <%= link_to "詳細", poem_path(poem.id), class: 'btn btn-default btn-sm btn-success' %>
+      <%= link_to "詳細表示", poem_path(poem.id), class: 'btn btn-default btn-sm btn-success' %>
     </div>
     <% end %>
     </div>
